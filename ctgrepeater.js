@@ -55,10 +55,10 @@ function InitHide(){
 
 function NextPicture(){
 		//Move the slide counter ahead one
-		counter = counter+1;
+		counter = counter++;
 		
 		//Set variable for figuring out which slide to hide
-		countersubtractone = counter-1;
+		countersubtractone = counter--;
 				
 		//Hide Previous Caption
 		selectorclass.find(options.repeatclass+":eq("+countersubtractone+")").hide();
